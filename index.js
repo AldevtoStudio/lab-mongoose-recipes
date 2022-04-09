@@ -29,7 +29,7 @@ mongoose
     });
   })
   .then((recipe) => {
-    console.log('Created a recipe: ', recipe);
+    console.log(`Created a recipe with name: ${recipe.title}`, recipe);
     return Recipe.insertMany(data);
   })
   .then((recipes) => {
